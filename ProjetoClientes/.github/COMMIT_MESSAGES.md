@@ -18,7 +18,7 @@ Este documento define o padrão de mensagens de commit para o projeto **ProjetoC
 - `[Utils]` — utilitários e constantes gerais
 - `[Build]` — arquivos de projeto, scripts, configurações
 - `[Docs]` — documentação e comentários
-- `[SQL]` — Ajustes no Banco de dados 
+- `[SQL]` — ajustes no Banco de dados 
 
 ---
 
