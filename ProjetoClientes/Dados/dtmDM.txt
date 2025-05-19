@@ -1,0 +1,45 @@
+Estrutura do Projeto Delphi
+Este documento apresenta a estrutura do projeto Delphi 10.1 organizado em camadas para o sistema de gerenciamento de clientes.
+Estrutura de Pastas
+Projeto_Clientes/
+│
+├── Apresentacao/           # Camada de apresentação (interfaces e formulários)
+│   ├── uFrmPrincipal.pas   # Formulário principal da aplicação
+│   ├── uFrmPrincipal.dfm   # Arquivo de design do formulário principal
+│   ├── uFrmClientes.pas    # Formulário de cadastro de clientes
+│   └── uFrmClientes.dfm    # Arquivo de design do formulário de clientes
+│
+├── Negocios/               # Camada de negócios/regras de negócio
+│   └── uClientesController.pas  # Controlador para operações de negócios de clientes
+│
+├── DAO/                    # Camada de acesso a dados
+│   └── uClientesDAO.pas    # Classe de acesso a dados para a tabela CLIENTES
+│
+├── Dados/                  # Camada de conexão com o banco de dados
+│   ├── uDM.pas             # Data Module para gerenciar conexões
+│   └── uDM.dfm             # Arquivo de design do Data Module
+│
+├── Utils/                  # Códigos utilitários e genéricos
+│   ├── uUtils.pas          # Funções utilitárias gerais
+│   └── uConstantes.pas     # Constantes do sistema
+│
+├── clientes.fdb            # Arquivo do banco de dados Firebird
+├── ProjetoClientes.dpr     # Arquivo principal do projeto Delphi
+└── ProjetoClientes.dproj   # Arquivo de projeto Delphi
+Descrição das Camadas
+Apresentacao
+Esta pasta contém todos os formulários e interfaces visuais que o usuário irá interagir. Os arquivos .pas contêm o código fonte enquanto os .dfm contêm os elementos visuais e suas propriedades.
+Negocios
+Esta camada contém as classes controladoras que implementam as regras de negócio da aplicação. Ela fica entre a camada de apresentação e a camada de acesso a dados.
+DAO (Data Access Object)
+Esta camada isola o acesso aos dados, abstraindo a comunicação com o banco de dados. Cada tabela importante terá uma classe DAO correspondente.
+Dados
+Contém os Data Modules que gerenciam conexões com o banco de dados e componentes para manipulação dos dados.
+Utils
+Contém funções utilitárias e constantes que podem ser usadas em todo o projeto, como funções de formatação, validação e outras utilidades genéricas.
+Fluxo de Funcionamento
+
+A interface do usuário (camada de Apresentação) coleta os dados e chama métodos da camada de Negócios
+A camada de Negócios aplica as regras de negócio e utiliza a camada DAO para persistir ou recuperar dados
+A camada DAO usa a camada de Dados para executar operações no banco de dados
+Os resultados seguem o caminho inverso até chegarem à interface do usuário
