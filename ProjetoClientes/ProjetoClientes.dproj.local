@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2025/05/18 22:03:57.563,=C:\Users\desktop\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2025/05/18 22:04:13.870,D:\_Delphi\Apresentacao\uFrmPrincipal.pas=C:\Users\desktop\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2025/05/18 22:04:13.870,D:\_Delphi\Apresentacao\uFrmPrincipal.dfm=C:\Users\desktop\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2025/05/18 22:05:07.921,C:\Users\desktop\Documents\Embarcadero\Studio\Projects\ProjetoClientes.dproj=C:\Users\desktop\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>2025/05/18 22:05:17.531,D:\_Delphi\ProjetoClientes.dproj=C:\Users\desktop\Documents\Embarcadero\Studio\Projects\ProjetoClientes.dproj</Transaction>
-    <Transaction>2025/05/18 22:05:40.757,=D:\_Delphi\Unit2.pas</Transaction>
-    <Transaction>2025/05/18 22:05:51.896,D:\_Delphi\Apresentacao\uFrmClientes.pas=D:\_Delphi\Unit2.pas</Transaction>
-    <Transaction>2025/05/18 22:05:51.896,D:\_Delphi\Apresentacao\uFrmClientes.dfm=D:\_Delphi\Unit2.dfm</Transaction>
+	<Transactions>
+    <Transaction>2025/05/18 22:03:57.000.563,=C:\Users\desktop\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/05/18 22:04:13.000.870,C:\Users\desktop\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\_Delphi\Apresentacao\uFrmPrincipal.pas</Transaction>
+    <Transaction>2025/05/18 22:04:13.000.870,C:\Users\desktop\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\_Delphi\Apresentacao\uFrmPrincipal.dfm</Transaction>
+    <Transaction>2025/05/18 22:05:07.000.921,C:\Users\desktop\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\desktop\Documents\Embarcadero\Studio\Projects\ProjetoClientes.dproj</Transaction>
+    <Transaction>2025/05/18 22:05:17.000.531,C:\Users\desktop\Documents\Embarcadero\Studio\Projects\ProjetoClientes.dproj=D:\_Delphi\ProjetoClientes.dproj</Transaction>
+    <Transaction>2025/05/18 22:05:40.000.757,=D:\_Delphi\Unit2.pas</Transaction>
+    <Transaction>2025/05/18 22:05:51.000.896,D:\_Delphi\Unit2.pas=D:\_Delphi\Apresentacao\uFrmClientes.pas</Transaction>
+    <Transaction>2025/05/18 22:05:51.000.896,D:\_Delphi\Unit2.dfm=D:\_Delphi\Apresentacao\uFrmClientes.dfm</Transaction>
   </Transactions>
 </BorlandProject>
