@@ -55,15 +55,18 @@ implementation
 
 procedure TfrmPrincipal.btnMenuClick(Sender: TObject);
 begin
-  if vMenuExpandido then
-  begin
-    pnlMenu.Width:= 48;
-    btnMenu.OptionsImage.ImageIndex := 74;
-  end
-  else
-  begin
-    btnMenu.OptionsImage.ImageIndex := 75;
-    pnlMenu.Width:= 215;
+
+  case vMenuExpandido of
+    True:
+    begin
+      pnlMenu.Width := 48;
+      btnMenu.OptionsImage.ImageIndex := 74;
+    end;
+    False:
+    begin
+      btnMenu.OptionsImage.ImageIndex := 75;
+      pnlMenu.Width := 215;
+    end;
   end;
 
   vMenuExpandido  := not vMenuExpandido;

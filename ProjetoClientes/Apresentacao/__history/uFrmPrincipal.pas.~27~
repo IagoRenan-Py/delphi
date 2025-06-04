@@ -30,15 +30,15 @@ type
   TfrmPrincipal = class(TForm)
     pnlBackground: TPanel;
     pnlMenu: TPanel;
-    btn2: TSpeedButton;
-    btn3: TSpeedButton;
     IconFontsVirtualImageList1: TIconFontsVirtualImageList;
     IconFontsImageCollection1: TIconFontsImageCollection;
     btnMenu: TcxButton;
     cxbtn2: TcxButton;
     cxbtn3: TcxButton;
     cxbtn4: TcxButton;
+    pnlSeparado: TPanel;
     procedure btnMenuClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -55,21 +55,23 @@ implementation
 
 procedure TfrmPrincipal.btnMenuClick(Sender: TObject);
 begin
-  if vMenuExpandido then
-  begin
-    pnlMenu.Width:= 42;
-    btnMenu.Glyph := nil;
-    IconFontsVirtualImageList1.GetBitmap(74, btnMenu.Glyph);
-  end
-  else
-  begin
-    btnMenu.Glyph := nil;
-    IconFontsVirtualImageList1.GetBitmap(75, btnMenu.Glyph);
-    pnlMenu.Width:= 215;
+case vMenuExpandido of
+  True: begin
+    pnlMenu.Width := 48;
+    btnMenu.OptionsImage.ImageIndex := 74;
   end;
+  False: begin
+    btnMenu.OptionsImage.ImageIndex := 75;
+    pnlMenu.Width := 215;
+  end;
+end;
+vMenuExpandido := not vMenuExpandido;
 
-  vMenuExpandido  := not vMenuExpandido;
+end;
 
+procedure TfrmPrincipal.FormShow(Sender: TObject);
+begin
+  pnlMenu.Width:= 48;
 end;
 
 end.

@@ -65,9 +65,6 @@ object frmPrincipal: TfrmPrincipal
         Font.Style = [fsBold]
         ParentFont = False
         OnClick = btnMenuClick
-        ExplicitLeft = -1
-        ExplicitTop = -3
-        ExplicitWidth = 48
       end
       object cxbtn2: TcxButton
         AlignWithMargins = True
@@ -90,8 +87,6 @@ object frmPrincipal: TfrmPrincipal
         SpeedButtonOptions.AllowAllUp = True
         SpeedButtonOptions.Flat = True
         TabOrder = 1
-        ExplicitTop = 150
-        ExplicitWidth = 192
       end
       object cxbtn3: TcxButton
         AlignWithMargins = True
@@ -115,7 +110,6 @@ object frmPrincipal: TfrmPrincipal
         SpeedButtonOptions.AllowAllUp = True
         SpeedButtonOptions.Flat = True
         TabOrder = 2
-        ExplicitWidth = 256
       end
       object cxbtn4: TcxButton
         AlignWithMargins = True
@@ -138,8 +132,6 @@ object frmPrincipal: TfrmPrincipal
         SpeedButtonOptions.AllowAllUp = True
         SpeedButtonOptions.Flat = True
         TabOrder = 3
-        ExplicitTop = 150
-        ExplicitWidth = 192
       end
       object pnlSeparado: TPanel
         Left = 0
@@ -151,7 +143,6 @@ object frmPrincipal: TfrmPrincipal
         Color = 13882323
         ParentBackground = False
         TabOrder = 4
-        ExplicitWidth = 48
       end
     end
   end
